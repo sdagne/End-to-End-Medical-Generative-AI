@@ -7,7 +7,7 @@
 clone the repository
 
 '''bash
-project repo: https://github.com/
+project repo: https://github.com/sdagne
 
 ### STEP 01 - Create a comda environment after opening the repository
 
