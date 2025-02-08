@@ -8,12 +8,12 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 list_of_files = [
     "src/__init__.py",
     "src/helper.py",
-     "src/prompt.py",
+    "src/prompt.py",
     ".env",
     "setup.py",
     "app.py",
     "research/trials.ipynb",
-    "Test.py"
+   " test.py"
 ]
 
 
@@ -27,10 +27,10 @@ for filepath in list_of_files:
         logging.info(f"Creating directory; {filedir} for the file: {filename}")
 
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
-         with open(filepath, "w") as f:
-              pass
-              logging.info(f"Creating empty file: {filepath}")
+        with open(filepath, "w") as f:
+            pass
+            logging.info(f"Creating empty file: {filepath}")
 
 
     else:
-         logging.info(f"{filename} is already e xists")
+        logging.info(f"{filename} is already exists")
